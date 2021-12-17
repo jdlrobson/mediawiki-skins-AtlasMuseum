@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [ "A-Pack" ]
+	},
+	"skinname-atlasmuseum": "atlasmuseum",
+	"atlasmuseum-desc": "Skin for atlasmuseum",
+	"atlasmuseum-contribute-page": "Spécial:EditArtwork",
+	"atlasmuseum-contribute-text": "Contribute",
+	"atlasmuseum-help": "https://www.mediawiki.org/wiki/Help:Contents",
+	"atlasmuseum-help-text": "Help",
+	"atlasmuseum-facebook": "https://www.facebook.com/Atlasmuseum",
+	"atlasmuseum-twitter": "https://twitter.com/atlasmuseum"
+}

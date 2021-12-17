@@ -1,0 +1,858 @@
+/* from atlasmuseum.css */
+
+html {
+    margin: auto;
+    width: 1050px;
+}
+body {
+    position: relative;
+    width: 1050px;
+    background-color: #E6E6E4; 
+    background-image: url("images/bg_body.png");
+    background-position: center top;
+    background-repeat: repeat-y;
+    font-family: "FranklinGothicW01-Extra 692515";
+    font-weight: normal;
+}
+.clearfix {
+    clear: both;
+}
+.mandatory{
+    color: red;
+}
+#mw-navigation{
+    font-family:"ITCFranklinGothicW02-Dm 812945";
+}
+h1,h2,h3,h4,h5,h6{
+    color: #505b61;
+}
+div#content{
+    color: #505b61;
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 895px;
+    border: none;
+    border-left:  1px solid #e4e8ea;
+}
+#firstHeading {
+    font-size: 48px;
+    padding: 33px 42px;
+    border: none;
+}
+div.vectorTabs{
+  padding-left: 2px;
+}
+div.vectorTabs ul li {
+    background: none no-repeat scroll 0 0 #FFFFFF;
+}
+div.vectorTabs span > a {
+    background-color: #FFFFFF;
+    border-right: 2px solid #E4E7E9;
+}
+a, a:visited {
+    color: #00B9EE;
+}
+div.vectorTabs li.selected a, div.vectorTabs li.selected a:visited, div.vectorTabs li a  {
+    color: #fbe023;
+}
+div#mw-panel{
+    width: 154px;
+    top: 197px;
+}
+#mw-panel.collapsible-nav{
+    width: 114px;
+    padding: 0 21px;
+    font-family: "ITCFranklinGothicW02-Dm 812945";
+    font-size: 16px;
+}
+#mw-panel.collapsible-nav .portal {
+    margin: 38px 0px 0px 0px;
+}
+
+#mw-panel.collapsible-nav .portal.persistent .body,
+div#mw-panel.collapsible-nav .portal.persistent .body {
+    margin-left: 0;
+}
+#mw-panel.collapsible-nav .portal .body ul li {
+    border-bottom: 1px solid #c5cdd1;
+    font-size: 16px;
+    margin: 0;
+    padding: 7px 0;
+}
+div#mw-panel.collapsible-nav .portal.collapsed h3 a, div#mw-panel.collapsible-nav .portal.collapsed h5 a,
+#mw-panel.collapsible-nav .portal.collapsed h3 a, #mw-panel.collapsible-nav .portal.collapsed h5 a {
+    color: #0487d2;
+    font-size: 12px;
+}
+div#mw-panel div.portal div.body ul li a, 
+div#mw-panel div.portal div.body ul li a:visited {
+    color: #999999;
+    font-size: 12px;
+}
+#mw-page-base {
+    background: url("images/bg_pattern.png") repeat-x scroll 0 0 #FBE023;
+    min-height: 198px;
+}
+#left-navigation, #right-navigation{
+top: 150px;
+}
+#right-navigation {
+    float: right;
+    margin-top: 0;
+    position: relative;
+}
+#left-navigation {
+    left: 154px;
+}
+
+div.vectorTabs, div.vectorTabs ul, div.vectorTabs span {
+    background-color: #E4E7E9;
+    background-image: none;
+}
+
+a.new,
+a.new:visited {
+    color: #663399;
+}
+#p-personal a.new,
+#p-personal a.new:visited {
+    color: #FFFFFF;
+}
+
+#pt-userpage, #pt-anonuserpage, #pt-login {
+    background: url("images/user_icon.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+}
+
+#p-personal li {
+    border-right: 1px solid #505B61;
+    font-size: 11px;
+    margin-left: 7px;
+    padding-right: 7px;
+}
+
+div.topCtnr{
+    float: left;
+    padding: 24px;
+    width: 847px;
+    border-top: 1px solid #e4e8ea;
+    border-bottom: 1px solid #e4e8ea;
+}
+div.ibCtnr{
+    border-bottom: 1px solid #e4e8ea;
+}
+
+div.topCtnr div.topImgCtnr{
+    float: left;
+    width: 420px;
+}
+div.ibCtnr div.ibSite,
+div.ibCtnr div.ibOeuvre{
+    float: left;
+    padding: 24px;
+    width: 258px;
+    border-right: 1px solid #e4e8ea;
+}
+div.ibCtnr div.ibArtiste {
+    float: left;
+    padding: 24px;
+    width: 224px;
+    border-left: 1px solid #e4e8ea;
+    margin-left: -1px;
+}
+.homeCtnr table.wikitable,
+div.ibCtnr div.ibOeuvre table.wikitable,
+div.popupOeuvre table.wikitable,
+div.ibCtnr div.ibSite table.wikitable,
+div.ibCtnr div.ibArtiste table.wikitable{
+    border-collapse: collapse;
+    width:100%;
+}
+div.popupOeuvre,
+div.popupOeuvre table.wikitable{
+    width: 266px;
+}
+
+.homeCtnr table.wikitable tbody tr,
+div.ibCtnr div.ibOeuvre table.wikitable tbody tr,
+div.popupOeuvre table.wikitable tbody tr,
+div.ibCtnr div.ibArtiste table.wikitable tbody tr,
+div.ibCtnr div.ibSite table.wikitable tbody tr{
+    height: 25px;
+}
+.homeCtnr table.wikitable tr td,
+.homeCtnr table.wikitable tr th,
+div.ibCtnr div.ibOeuvre table.wikitable tbody tr th,
+div.ibCtnr div.ibOeuvre table.wikitable tbody tr td,
+div.ibCtnr div.ibArtiste table.wikitable tbody tr th,
+div.ibCtnr div.ibArtiste table.wikitable tbody tr td,
+div.ibCtnr div.ibSite table.wikitable tbody tr th,
+div.ibCtnr div.ibSite table.wikitable tbody tr td{
+    text-align: left;
+    color: #505b61;
+    border-bottom: solid 1px #ececeb;
+    vertical-align: top;
+    padding-top: 3px;
+    overflow-wrap: break-word;
+		word-wrap: break-word;
+		-ms-word-break: break-all;
+  	word-break: break-all;
+		word-break: break-word;
+		hyphens:auto;
+}
+.homeCtnr table.wikitable tr th{
+    vertical-align: middle;
+}
+div.popupOeuvre table.wikitable tbody tr th,
+div.popupOeuvre  table.wikitable tbody tr td{
+      text-align: left;
+    color: #505b61;
+    border-bottom: solid 1px #ececeb;
+    vertical-align: top;
+    padding-top: 3px;
+}
+
+div.ibCtnr div.ibOeuvre table.wikitable tbody tr th,
+div.ibCtnr div.ibArtiste table.wikitable tbody tr th,
+div.ibCtnr div.ibSite table.wikitable tbody tr th{
+    fontsize: 11px;
+    font-family:"ITCFranklinGothicW02-Dm 812945";
+    font-weight: normal;
+    width: 130px;
+}
+div.popupOeuvre table.wikitable tbody tr th{
+    fontsize: 11px;
+    font-family:"ITCFranklinGothicW02-Dm 812945";
+    font-weight: normal;
+    width: 120px;
+}
+
+div.ibCtnr div.ibOeuvre table.wikitable tbody tr td,
+div.ibCtnr div.ibArtiste table.wikitable tbody tr td,
+div.ibCtnr div.ibSite table.wikitable tbody tr td{
+    fontsize: 13px;
+    font-family:"ITCFranklinGothicW02-Bk 812924";
+}
+div.popupOeuvre table.wikitable tbody tr td{
+    fontsize: 13px;
+    font-family:"ITCFranklinGothicW02-Bk 812924";
+}
+body.page-Accueil #firstHeading{
+    display: none;
+} 
+div.mapCtnr{
+    padding: 24px 24px 40px 24px;
+    border-bottom: 1px solid #E4E8EA;
+    overflow-wrap: break-word;
+}
+div.mapCtnr div.mapLgd{
+    margin-bottom: 20px;
+	margin-top: 20px;
+}
+div.mapCtnr div.mapLgd >span{
+    margin: 10px;
+}
+div.atlasCtnr, div.homeCtnr{
+        padding: 40px 24px 0px 24px;
+
+}
+div.atlasCtnr>p{ /* fuckin wiki syntax ! */
+    display: none;
+}
+div.ibCtnr h2,
+div.atlasCtnr h2,
+div.homeCtnr h3 {
+    background-color: #FBE023;
+    border: medium none;
+    color: #FFFFFF;
+    font-size: 18px;
+    height: 30px;
+    margin: 0 0 30px 0;
+    overflow: visible;
+    padding: 8px;
+}
+div.atlasCtnr h2{
+      font-size: 22px;
+      background-color: #505b61;
+}
+
+div.ibCtnr h2 span,
+div.atlasCtnr h2 span,
+div.homeCtnr h3 span {
+       background: url("images/h2-bg-yellow.png") no-repeat scroll -8px 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 44px;
+    line-height: 28px;
+    margin: 0;
+    padding: 0;
+}
+div.atlasCtnr h2 span{
+       background: url("images/h2-bg.png") no-repeat scroll -8px 0 rgba(0, 0, 0, 0);
+
+}
+
+div.topCtnr div.topImgCtnr div.tright {
+    margin: 0;
+    float: left;
+}
+div.topCtnr div.topImgCtnr div.tright div.thumbinner {
+    background-color: none;
+    border: none;
+    font-size: 94%;
+    overflow: hidden;
+    padding: 0px !important;
+    text-align: center;
+}
+div.topCtnr div.topImgCtnr div.tright div.thumbinner img.thumbimage {
+    border: none;
+}
+div.topCtnr div.topImgCtnr div.tright div.thumbinner div.thumbcaption div.magnify {
+    display: none;
+}
+
+
+#p-logo a,
+#p-logo a:visited,
+#mw-navigation #p-logo a,
+#mw-navigation #p-logo a:visited,
+.mw-body #mw-navigation #p-logo a,
+.mw-body #mw-navigation #p-logo a:visited {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    font-size: 58.04px;
+    margin-left: 26px;
+    text-decoration: none;
+    text-transform: lowercase;
+    width: 230px;
+    height: 66px;
+}
+
+div#mw-panel #p-navigation {
+    margin-top: 38px;
+    margin: 0px 0px 6px 0px;
+}
+
+
+div#mw-panel #p-Contribuer {
+    border-bottom: 0px;
+}
+
+div#mw-panel.collapsible-nav .portal{
+    margin-left: -6px;
+    background: none;
+}
+#jump-to-nav {
+    display: none;
+}
+div#footer{
+    float: right;
+    width: 847px;
+    min-height: 82px;
+    background: url("images/footer_bg_pattern.png") repeat-x scroll 0 0 #FBE023;
+
+    direction: ltr;
+    margin-left: 154px;
+    margin-top: 0;
+    padding: 16px 24px;
+    text-align: center;
+
+    font-family: "ITCFranklinGothicW02-Dm 812945";
+    font-size: 11px;
+    color: #505b61;
+}
+
+div#footer ul li {
+    color: #505b61;
+}
+div.atlasCtnr div.atmslideshowCtnr{
+    margin-top: -1px;
+}
+
+div.atlasCtnr div.atmslideshowCtnr div.atmslideshowHead{
+    border-top: 1px solid #FBE023;
+    border-bottom: 1px solid #FBE023;
+    min-height: 50px;
+}
+div.atlasCtnr div.atmslideshowCtnr div.atmslideshowHead h3{
+    font-size: 28px;
+    font-weight: normal;
+    background: url("images/slideshowHead-arrow_e.png") no-repeat scroll 10px 15px #FFFFFF;
+    text-indent: 40px;
+    cursor: pointer;
+}
+div.atlasCtnr div.atmslideshowCtnr div.atmslideshowHeadExt h3{
+    background: url("images/slideshowHead-arrow_s.png") no-repeat scroll 10px 15px #FFFFFF;
+}
+div.atmslideshowCtnr  ul{
+    list-style: none;
+    margin: 18px 0px 22px 0px;
+}
+div.atmslideshowCtnr ul li{
+    display: inline-block;
+    width: 210px;
+    text-align: center;
+    margin-right: 1.75px;
+    vertical-align: top;
+    box-sizing:border-box;
+}
+div.atmslideshowCtnr ul li div.thumb{
+    margin: 0px;
+    width:100%;
+}
+div.atmslideshowCtnr ul li div.thumb div.tright{
+    margin: 0px;
+}
+div.atmslideshowCtnr ul li div.thumb div.thumbinner{
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    min-height: 197px;
+    position: relative;
+    padding-bottom: 52px;
+}
+div.atmslideshowCtnr ul li div.thumb div.thumbinner div.thumbcaption{
+    text-align: center;
+    position: absolute;
+    width: 90%;
+    bottom: 0px;
+    height: 52px;
+}
+.catlinks{
+    background-color: #505B61;
+    border: medium none;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 85px 55px;
+    display: none;
+
+}
+.catlinks div.mw-normal-catlinks a{
+    color: #fbe023;
+    font-size: 18px;
+}
+
+
+.printfooter, #footer-icons{
+
+}
+.printfooter{
+    display: none;
+}
+div#content{
+    padding-bottom: 40px;
+}
+
+div#simpleSearch{
+    background-image: none;
+}
+
+#p-search {
+    margin-right: 20px;
+}
+body.ltr div#footer #footer-places {
+    display: inline-block;
+    float: none;
+    margin-top: 16px;
+}
+
+#p-logo a {
+    font-family:"FranklinGothicW01-Extra 692515";
+}
+div#mw-head-base a {
+    font-family:"ITCFranklinGothicW02-Bk 812924";
+	color: white;
+    font-size: 13px;
+    text-decoration: none;
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    position: relative;
+    left: 464px;
+    top: -57px;
+}
+#mw-head-base > a#haddnotice {
+    text-indent: 41px;
+    width: 185px;
+    background: url("images/haddnotice.png") no-repeat scroll 0px 0px transparent;
+}
+#mw-head-base > a#haide {    
+    text-indent: 41px;
+    width: 141px;
+    background: url("images/haide.png") no-repeat scroll 0px 0px transparent;
+}
+#mw-head-base > a#hfb {
+    text-indent: -5000em;
+    width: 49px;
+    background: url("images/hfb.png") no-repeat scroll 0px 0px transparent;
+}
+#mw-head-base > a#htwitter {
+    text-indent: -5000em;
+    width: 28px;
+    background: url("images/htwitter.png") no-repeat scroll 0px 0px transparent;
+}
+#firstHeading > span {
+    border-bottom: 8px solid #fbe023;
+}
+
+div#bodyContent {
+    line-height: 1.42em;
+    padding-left: 43px;
+    padding-right: 43px;
+    font-family:"ITCFranklinGothicW02-Bk 812924";
+    width: auto;
+    font-size: 14px;
+}
+
+body.page-Accueil div#bodyContent{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+h2 {
+    font-size: 18px;
+    font-family:"ITCFranklinGothicW02-Dm 812945";
+
+}
+a,
+.mw-body a.external,
+.mw-body a.external:visited {
+    color: #00B9EE;
+}
+
+ul {
+    list-style-image: url("images/libullet.png");
+}
+
+
+div.dalm{ /* dirty anti late margin */
+    margin-left: -43px;
+    margin-right: -43px;
+}
+
+
+div.ibOeuvre h2,
+div.ibArtiste h2,
+div.ibSite h2{
+    font-size: 18px;
+    font-family: "ITCFranklinGothicW02-Dm 812945";
+    color: white;
+
+}
+div.ibArtiste >h3 >span >a{
+    font-size: 16px;
+}
+
+
+div.pageArtiste table.wikitable{
+    padding: 0px;
+    font-size: 13px;
+    border-collapse: collapse;
+    margin-top: 27px;
+
+}
+div.pageArtiste table.wikitable tr th {
+    text-align: left;
+    width: 162px;
+}
+div.pageArtiste table.wikitable tr th,  
+div.pageArtiste table.wikitable tr td{
+    border-bottom: 1px solid #E0E0E0;
+    padding: 4px 6px;
+}
+
+div#footer ul li {
+    font-size: 11px;
+}
+
+#mw-navigation a,
+#mw-navigation a:visited,
+.mw-body #mw-navigation a.external,
+.mw-body #mw-navigation a.external:visited {
+
+    color: #8d8f90;
+}
+table.formtable th {
+        background: none repeat scroll 0 0 #FFE300;
+    height: 40px;
+    margin: 10px;
+    padding: 6px;
+    text-align: left;
+    vertical-align: top;
+}
+.formtable {
+    border: 1px solid #efefef;
+    margin: 0;
+    padding: 34px;
+}
+.formtable td {
+    vertical-align: top;
+    padding-left: 26px;
+}
+
+.createboxInput {
+    border: 1px solid #D5DBDB;
+}
+
+div.checkboxes1column  {
+     -moz-column-count:1;-webkit-column-count:1;column-count:1;-moz-column-gap:1em;-webkit-column-gap:1em;column-gap:1em;text-align:left;
+}
+
+div.checkboxes1column label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+
+div.checkboxes1column input {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+}
+
+div.checkboxes2columns  {
+     -moz-column-count:2;-webkit-column-count:2;column-count:2;-moz-column-gap:1em;-webkit-column-gap:1em;column-gap:1em;text-align:left;
+}
+
+div.checkboxes2columns label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+
+div.checkboxes2columns input {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+}
+
+div.checkboxes3columns  {
+     -moz-column-count:3;-webkit-column-count:3;column-count:3;-moz-column-gap:1em;-webkit-column-gap:1em;column-gap:1em;text-align:left;
+}
+
+div.checkboxes4columns  {
+     -moz-column-count:4;-webkit-column-count:4;column-count:4;-moz-column-gap:1em;-webkit-column-gap:1em;column-gap:1em;text-align:left;
+}
+
+div.checkboxes5columns  {
+     -moz-column-count:5;-webkit-column-count:5;column-count:5;-moz-column-gap:1em;-webkit-column-gap:1em;column-gap:1em;text-align:left;
+}
+ 
+div.checkboxes3columns label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+
+div.checkboxes3columns input {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+}
+
+div.checkboxes4columns label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+
+div.checkboxes4columns input {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+}
+
+div.checkboxes5columns label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+
+div.checkboxes5columns input {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+}
+
+@import url("http://fast.fonts.net/lt/1.css?apiType=css&c=76254d46-8508-4c2f-96ec-a35f36e5d8fc&fontids=692515");
+@font-face{
+font-family:"FranklinGothicW01-Extra 692515";
+src:url("/w/skins/atlasmuseum/Fonts/692515/87046844-4305-4689-aa18-f740e1dd4ac3.eot?#iefix");
+src:url("/w/skins/atlasmuseum/Fonts/692515/87046844-4305-4689-aa18-f740e1dd4ac3.eot?#iefix") format("eot"),url("/w/skins/atlasmuseum/Fonts/692515/b683d7c1-e42e-4419-846b-c0ca0b33c31e.woff") format("woff"),url("/w/skins/atlasmuseum/Fonts/692515/99009de2-f29b-451a-aada-6a8125460dc3.ttf") format("truetype"),url("/w/skins/atlasmuseum/Fonts/692515/b4f8ffc3-8a37-4a98-9696-554ed3577517.svg#b4f8ffc3-8a37-4a98-9696-554ed3577517") format("svg");
+}
+
+
+@import url("http://fast.fonts.net/lt/1.css?apiType=css&c=76254d46-8508-4c2f-96ec-a35f36e5d8fc&fontids=692512,812924,812945");
+@font-face{
+font-family:"FranklinGothicW01-Cond";
+src:url("/w/skins/atlasmuseum/Fonts/692512/d534f828-e70e-44ad-9256-0063bfd76f53.eot?#iefix");
+src:url("/w/skins/atlasmuseum/Fonts/692512/d534f828-e70e-44ad-9256-0063bfd76f53.eot?#iefix") format("eot"),url("/w/skins/atlasmuseum/Fonts/692512/54b4b724-8acf-4931-ac8c-1df0c3fd7f2c.woff") format("woff"),url("/w/skins/atlasmuseum/Fonts/692512/273eb8b2-62ff-40b0-aff6-46376431eae1.ttf") format("truetype"),url("/w/skins/atlasmuseum/Fonts/692512/45a74047-2fa0-4ddf-be6b-0cdbd7645f60.svg#45a74047-2fa0-4ddf-be6b-0cdbd7645f60") format("svg");
+}
+@font-face{
+font-family:"ITCFranklinGothicW02-Bk 812924";
+src:url("/w/skins/atlasmuseum/Fonts/812924/ea409d88-af4e-4996-a959-8ad79279d5d6.eot?#iefix");
+src:url("/w/skins/atlasmuseum/Fonts/812924/ea409d88-af4e-4996-a959-8ad79279d5d6.eot?#iefix") format("eot"),url("/w/skins/atlasmuseum/Fonts/812924/be9d644e-881d-442f-930f-59c088a86753.woff") format("woff"),url("/w/skins/atlasmuseum/Fonts/812924/6b33705f-de45-4c7d-a41e-cdc7d4d818e0.ttf") format("truetype"),url("/w/skins/atlasmuseum/Fonts/812924/bc52e040-0508-4d95-bbfd-261dd943ba62.svg#bc52e040-0508-4d95-bbfd-261dd943ba62") format("svg");
+}
+@font-face{
+font-family:"ITCFranklinGothicW02-Dm 812945";
+Src:url("/w/skins/atlasmuseum/Fonts/812945/af06afae-bf17-467b-908f-f3ab275e8f0b.eot?#iefix");
+src:url("/w/skins/atlasmuseum/Fonts/812945/af06afae-bf17-467b-908f-f3ab275e8f0b.eot?#iefix") format("eot"),url("/w/skins/atlasmuseum/Fonts/812945/fa57f000-5f6b-487b-9d4a-6bcbbc9f4ed3.woff") format("woff"),url("/w/skins/atlasmuseum/Fonts/812945/76d9d36e-c1c1-427a-9cb5-029e48ec89b2.ttf") format("truetype"),url("/w/skins/atlasmuseum/Fonts/812945/915fd7dc-0f62-4912-9e07-2a2e7bc8a6c7.svg#915fd7dc-0f62-4912-9e07-2a2e7bc8a6c7") format("svg");
+}
+
+/**
+ * Notice+
+ **/
+
+div.noticePlus {
+	float:right;
+	position:relative;
+	margin-top:24px;
+}
+
+div.noticePlus:not(.noticePlusExpanded) {
+	width:1px;
+}
+
+div.noticePlus > h2 {
+	position:absolute;
+	top:0;
+	left:0;
+	transform:rotate(-90deg) translate(-100%,-100%) ;
+	transform-origin: top left 0;
+	background-color:#505b61;
+	color:white;
+	padding-left:30px;
+	padding-right:29px;
+	cursor:pointer;
+}
+
+div.noticePlus:not(.noticePlusExpanded) > div {
+	display:none;
+}
+
+div.noticePlusExpanded > div {
+	display:inline-block;
+	width:420px;
+	border:1px solid #505b61;
+	margin:0 24px 0 0;
+	padding:10px;
+	box-sizing:border-box;
+	-webkit-box-shadow: 5px 5px 5px 0px #9e9e9e;
+	-moz-box-shadow: 5px 5px 5px 0px #9e9e9e;
+	box-shadow: 5px 5px 5px 0px #9e9e9e;
+}
+
+div.noticePlus + div.ibCtnr {
+	border-bottom:0px;
+}
+
+div.noticePlusExpanded + div.ibCtnr {
+	width: 400px;
+}
+
+div.noticePlus:not(.noticePlusExpanded) + div.ibCtnr + div.atlasCtnr {
+	width:830px;
+	padding-top:0;
+}
+
+div.noticePlus:not(.noticePlusExpanded)  + div.ibCtnr > div.ibOeuvre,
+div.noticePlus:not(.noticePlusExpanded)  + div.ibCtnr > div.ibsite {
+	width: 248px;
+}
+
+div.noticePlus:not(.noticePlusExpanded)  + div.ibCtnr > div.ibArtiste {
+	width: 224px;
+}
+
+div.noticePlusExpanded + div.ibCtnr > div.ibOeuvre,
+div.noticePlusExpanded + div.ibCtnr > div.ibSite,
+div.noticePlusExpanded + div.ibCtnr > div.ibArtiste {	
+	width: 350px;
+	padding:0 24px 0 24px;
+	border-right:none;
+}
+
+div.noticePlusExpanded + div.ibCtnr > div.ibOeuvre {
+	margin-top:24px;
+}
+
+div.noticePlus + div.ibCtnr > div.ibOeuvre h2,
+div.noticePlus + div.ibCtnr > div.ibSite h2,
+div.noticePlus + div.ibCtnr > div.ibArtiste h2 {	
+	position:relative;
+	padding-left:30px;
+	cursor:pointer;
+}
+
+div.noticePlus:not(.noticePlusExpanded) + div.ibCtnr > div.ibOeuvre h2,
+div.noticePlus:not(.noticePlusExpanded) + div.ibCtnr > div.ibSite h2,
+div.noticePlus:not(.noticePlusExpanded) + div.ibCtnr > div.ibArtiste h2 {	
+	margin:0;
+}
+
+div.noticePlus + div.ibCtnr > div.ibOeuvre h2.ibCtnrDisplayed:after,
+div.noticePlus + div.ibCtnr > div.ibSite h2.ibCtnrDisplayed:after,
+div.noticePlus + div.ibCtnr > div.ibArtiste h2.ibCtnrDisplayed:after {	
+	content:'';
+	background: url("images/slideshowHead-arrow-white_e.png") no-repeat scroll 0 50%;
+	position:absolute;
+	top:0;
+	left:10px;
+	bottom:0;
+	width:20px;
+}
+
+/*h2:not(.ibCtnrDisplayed):after {
+	content:'';
+	background: url("images/slideshowHead-arrow-white_s.png") no-repeat scroll 0 50%;
+	position:absolute;
+	top:0;
+	left:10px;
+	bottom:0;
+	width:20px;
+}*/
+
+div.noticePlus + div.ibCtnr > div.ibOeuvre > table,
+div.noticePlus + div.ibCtnr > div.ibSite > table,
+div.noticePlus + div.ibCtnr > div.ibArtiste > h3,
+div.noticePlus + div.ibCtnr > div.ibArtiste > p,
+div.noticePlus + div.ibCtnr > div.ibArtiste > a,
+div.noticePlus + div.ibCtnr > div.ibArtiste > table {
+	/*display:none;*/
+}
+
+div.noticePlusExpanded + div.ibCtnr > div.ibOeuvre > table,
+div.noticePlusExpanded + div.ibCtnr > div.ibSite > table {
+	margin-bottom:10px;
+}
+
+div.noticePlus:not(.noticePlusExpanded) + div.ibCtnr + div.atlasCtnr > div.atmslideshowCtnr ul li {
+	width: 205px;
+}
+
+.mapCtnr {
+  position: relative;
+}

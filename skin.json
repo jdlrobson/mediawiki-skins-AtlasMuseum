@@ -1,0 +1,40 @@
+{
+	"name": "AtlasMuseum",
+	"author": "A-Pack",
+	"descriptionmsg": "atlasmuseum-desc",
+	"namemsg": "skinname-atlasmuseum",
+	"license-name": "GPL-2.0+",
+	"type": "skin",
+	"manifest_version": 2,
+	"ValidSkinNames": {
+		"atlasmuseum": "AtlasMuseum"
+	},
+	"AutoloadClasses": {
+		"SkinAtlasMuseum": "AtlasMuseum.skin.php",
+		"AtlasMuseumTemplate": "AtlasMuseumTemplate.php"
+	},
+	"MessagesDirs": {
+		"AtlasMuseum": "i18n"
+	},
+	"ResourceModules": {
+		"skins.atlasmuseum": {
+			"class": "ResourceLoaderSkinModule",
+			"features": {
+				"interface": true
+			},
+			"styles": {
+				"resources/screen.css": { "media": "screen" }
+			}
+		},
+		"skins.atlasmuseum.js": {
+			"position": "bottom",
+			"scripts": [
+				"resources/atlasmuseum.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "AtlasMuseum"
+	}
+}

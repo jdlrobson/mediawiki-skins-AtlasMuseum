@@ -1,0 +1,234 @@
+#bodyContent {
+	line-height: 1.42em;
+	/*padding-left: 43px;
+	padding-right: 43px;*/
+	color: #505b61;
+}
+
+#artwork_top,
+#artwork_main,
+#artwork_atlas {
+	margin-left: -1em;
+	margin-right: -1em;
+	border-top: 1px solid #e4e8ea;
+	padding:24px;
+	clear:both;
+}
+
+#artwork_top {
+	min-height:268px;
+}
+
+#artwork_image,
+#artwork_map {
+	float:left;
+	width:50%;
+	padding:5px;
+	box-sizing:border-box;
+	text-align:center;
+}
+
+#artwork_image > p {
+	margin-top:0;
+}
+
+#artwork_image img {
+	max-width:100%;
+	max-height:258px;
+}
+
+#artwork_map {
+	height:268px;
+}
+
+#map {
+	background-color:#cccccc;
+	height:100%;
+	text-align: center;
+	vertical-align: middle;
+	line-height:238px; 
+}
+
+#artwork_artwork,
+#artwork_site,
+#artwork_artist {
+	float:left;
+	width:33%;
+	padding:5px;
+	box-sizing:border-box;
+}
+
+#artwork_site {
+	width:34%;
+}
+
+#artwork_main h2 {
+	font-size: 18px;
+	color: white;
+	background-color: #FBE023;
+	padding:8px;
+	border:none;
+	position:relative;
+	overflow:visible;
+	margin-bottom:2em;
+}
+
+#artwork_main h2::after {
+	content:'';
+	position:absolute;
+	bottom:0;
+	left:8px;
+	width:10px;
+	height:10px;
+	background-color: #FBE023;
+	transform:translate(0,50%) rotate(45deg);
+}
+
+#artwork_main ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+#artwork_main li {
+	border-bottom: solid 1px #ececeb;
+	padding-bottom:3px;
+	font-size:14px;
+}
+
+#artwork_main li .left_column,
+#artwork_main li .right_column {
+	display:inline-block;
+	width:50%;
+	box-sizing:border-box;
+}
+
+#artwork_main li .two_columns_title,
+#artwork_main li .two_columns_text {
+	display:inline-block;
+	width:100%;
+	box-sizing:border-box;
+}
+
+#artwork_main li .two_columns_title {
+	font-weight:bold;
+}
+
+#artwork_main li .left_column {
+	float:left;
+	font-weight:bold;
+}
+
+#artwork_artist h3 {
+	font-size:16px;
+}
+
+#artwork_artist a {
+	font-size:16px;
+}
+
+#artwork_artist img {
+	width:262px;
+}
+
+#artwork_atlas h2 {
+	font-size: 22px;
+	background-color: #505b61;
+	text-transform:uppercase;
+	color:white;
+	padding:8px;
+	position:relative;
+	overflow:visible;
+}
+
+#artwork_atlas h2::after {
+	content:'';
+	position:absolute;
+	bottom:0;
+	left:8px;
+	width:10px;
+	height:10px;
+	background-color: #505b61;
+	transform:translate(0,50%) rotate(45deg);
+}
+
+#artwork_atlas > div h3 {
+	border-bottom:1px solid #FBE023;
+	padding-bottom:10px;
+	font-size: 28px;
+	color: #505b61;
+	font-weight:normal;
+	padding-left:20px;
+}
+#artwork_atlas > div:first-of-type h3 {
+	border-top:1px solid #FBE023;
+}
+
+#artwork_atlas ul {
+	list-style-type: none;
+}
+
+#artwork_atlas li {
+	display:inline-block;
+	width:24%;
+	padding-top:24%;
+	position:relative;
+}
+
+.atlas_wrap {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	border:1px solid #ccc;
+	padding:2px;
+	text-align:center;
+}
+
+.atlas_image {
+	position:absolute;
+	top:2px;
+	left:2px;
+	right:2px;
+	bottom:25%;
+}
+
+.atlas_image img {
+	max-width:100%;
+	width:auto;
+	height:100%;
+}
+
+.atlas_legend {
+	position:absolute;
+	top:76%;
+	left:2px;
+	right:2px;
+	bottom:2px;
+	overflow:hidden;
+	font-size:80%;
+}
+
+/**
+ * CSS spécifique pour les œuvres provenant de Wikidata
+ **/
+
+h1.wikidata > span {
+	border-bottom: 8px solid #006699;
+}
+
+.wikidata #artwork_main h2 {
+	background-color: #006699;
+}
+
+.wikidata #artwork_main h2::after {
+	content:'';
+	position:absolute;
+	bottom:0;
+	left:8px;
+	width:10px;
+	height:10px;
+	background-color: #006699;
+	transform:translate(0,50%) rotate(45deg);
+}

@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "FranklinGothicW01-Extra 692515";
+  font-style: normal;
+  /*font-weight: 100;*/
+  src: 
+  	local('FranklinGothicW01-Extra 692515'), 
+  	url("http://publicartmuseum.net/w/skins/AtlasMuseum/Fonts/692515/87046844-4305-4689-aa18-f740e1dd4ac3.eot?#iefix") format("eot"),
+  	url("http://publicartmuseum.net/w/skins/AtlasMuseum/Fonts/692515/b683d7c1-e42e-4419-846b-c0ca0b33c31e.woff") format("woff"),
+  	url("http://publicartmuseum.net/w/skins/AtlasMuseum/Fonts/692515/99009de2-f29b-451a-aada-6a8125460dc3.ttf") format("truetype"),
+  	url("http://publicartmuseum.net/w/skins/AtlasMuseum/Fonts/692515/b4f8ffc3-8a37-4a98-9696-554ed3577517.svg#b4f8ffc3-8a37-4a98-9696-554ed3577517") format("svg");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+	font-family: "ITCFranklinGothicW02-Dm 812945";
+  font-style: normal;
+  /*font-weight: 100;*/
+  src: 
+  	local('ITCFranklinGothicW02-Dm 812945'), 
+		url("http://publicartmuseum.net/w/skins/AtlasMuseum/Fonts/812945/af06afae-bf17-467b-908f-f3ab275e8f0b.eot?#iefix") format("eot"),
+		url("http://publicartmuseum.net/w/skins/AtlasMuseum/Fonts/812945/fa57f000-5f6b-487b-9d4a-6bcbbc9f4ed3.woff") format("woff"),
+		url("http://publicartmuseum.net/w/skins/AtlasMuseum/Fonts/812945/76d9d36e-c1c1-427a-9cb5-029e48ec89b2.ttf") format("truetype"),
+		url("http://publicartmuseum.net/w/skins/AtlasMuseum/Fonts/812945/915fd7dc-0f62-4912-9e07-2a2e7bc8a6c7.svg#915fd7dc-0f62-4912-9e07-2a2e7bc8a6c7") format("svg");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+	font-family: "ITCFranklinGothicW02-Bk 812924";
+  font-style: normal;
+  /*font-weight: 100;*/
+  src: 
+  	local('ITCFranklinGothicW02-Bk 812924'), 
+		url("http://publicartmuseum.net/w/skins/AtlasMuseum/Fonts/812924/ea409d88-af4e-4996-a959-8ad79279d5d6.eot?#iefix") format("eot"),
+		url("http://publicartmuseum.net/w/skins/AtlasMuseum/Fonts/812924/be9d644e-881d-442f-930f-59c088a86753.woff") format("woff"),
+		url("http://publicartmuseum.net/w/skins/AtlasMuseum/Fonts/812924/6b33705f-de45-4c7d-a41e-cdc7d4d818e0.ttf") format("truetype"),
+		url("http://publicartmuseum.net/w/skins/AtlasMuseum/Fonts/812924/bc52e040-0508-4d95-bbfd-261dd943ba62.svg#bc52e040-0508-4d95-bbfd-261dd943ba62") format("svg");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+	font-family: "FranklinGothicW01-Cond";
+  font-style: normal;
+  /*font-weight: 100;*/
+  src: 
+  	local('FranklinGothicW01-Cond'), 
+  	url("http://publicartmuseum.net/w/skins/AtlasMuseum/Fonts/692512/d534f828-e70e-44ad-9256-0063bfd76f53.eot?#iefix") format("eot"),
+  	url("http://publicartmuseum.net/w/skins/AtlasMuseum/Fonts/692512/54b4b724-8acf-4931-ac8c-1df0c3fd7f2c.woff") format("woff"),
+  	url("http://publicartmuseum.net/w/skins/AtlasMuseum/Fonts/692512/273eb8b2-62ff-40b0-aff6-46376431eae1.ttf") format("truetype"),
+  	url("http://publicartmuseum.net/w/skins/AtlasMuseum/Fonts/692512/45a74047-2fa0-4ddf-be6b-0cdbd7645f60.svg#45a74047-2fa0-4ddf-be6b-0cdbd7645f60") format("svg");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+

@@ -1,0 +1,29 @@
+jQuery( function ( $ ) {
+	$( 'div.vectorMenu' ).each( function () {
+		var $el = $( this );
+		$el.find( 'h3:first a:first' )
+			// For accessibility, show the menu when the hidden link in the menu is clicked (bug 24298)
+			.click( function ( e ) {
+				$el.find( '.menu:first' ).toggleClass( 'menuForceShow' );
+				e.preventDefault();
+			} )
+			// When the hidden link has focus, also set a class that will change the arrow icon
+			.focus( function () {
+				$el.addClass( 'vectorMenuFocus' );
+			} )
+			.blur( function () {
+				$el.removeClass( 'vectorMenuFocus' );
+			} );
+  } );
+  $('.portal > h3 > a').click(function(event) {
+    event.preventDefault();
+    const body = $(this).parent().parent().find('.body')[0]
+    $(this).parent().parent().toggleClass('collapsed')
+    $(this).parent().parent().toggleClass('expanded')
+    if ($(body).css('display') === 'none') {
+      $(body).css('display', 'block');
+    } else {
+      $(body).css('display', 'none');
+    }
+  })
+});
