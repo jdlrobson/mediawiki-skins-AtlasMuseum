@@ -98,8 +98,6 @@ class AtlasMuseumTemplate extends BaseTemplate {
 
 		$this->data['pageLanguage'] =
 			$this->getSkin()->getTitle()->getPageViewLanguage()->getHtmlCode();
-
-		$this->html( 'headelement' ); 
 ?>
 <div id="page-base" class="noprint"></div>
 <div id="content">
@@ -254,10 +252,7 @@ class AtlasMuseumTemplate extends BaseTemplate {
 <?php } ?>
 	<div style="clear:both"></div>
 </div>
-
-<?php $this->printTrail(); ?>
-</body>
-</html><?php
+<?php
 	}
 
 	/**

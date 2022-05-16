@@ -6,8 +6,26 @@
 	"license-name": "GPL-2.0+",
 	"type": "skin",
 	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.39.0"
+	},
 	"ValidSkinNames": {
-		"atlasmuseum": "AtlasMuseum"
+		"atlasmuseum": {
+			"class": "SkinAtlasMuseum",
+			"args": [
+				{
+					"bodyOnly": true,
+					"name": "atlasmuseum",
+					"styles": [
+						"skins.atlasmuseum"
+					],
+					"scripts": [
+						"skins.atlasmuseum.js"
+					],
+					"template": "AtlasMuseumTemplate"
+				}
+			]
+		}
 	},
 	"AutoloadClasses": {
 		"SkinAtlasMuseum": "AtlasMuseum.skin.php",
