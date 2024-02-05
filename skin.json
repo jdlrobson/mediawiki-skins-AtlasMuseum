@@ -7,7 +7,7 @@
 	"type": "skin",
 	"manifest_version": 2,
 	"requires": {
-		"MediaWiki": ">= 1.39.0"
+		"MediaWiki": ">= 1.41.0"
 	},
 	"ValidSkinNames": {
 		"atlasmuseum": {
