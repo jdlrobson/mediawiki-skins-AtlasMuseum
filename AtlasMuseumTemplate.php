@@ -1,4 +1,6 @@
 <?php
+use MediaWiki\ResourceLoader\SkinModule;
+
 /**
  * BaseTemplate class for atlasmuseum skin
  *
@@ -147,7 +149,7 @@ class AtlasMuseumTemplate extends BaseTemplate {
 					<a href="#p-search"><?php $this->msg( 'jumptosearch' ) ?></a>
 				</div>
 				<?php
-				$this->html( 'bodycontent' );
+;				$this->html( 'bodycontent' );
 
 				if ( $this->data['printfooter'] ) {
 					?>
@@ -199,7 +201,7 @@ class AtlasMuseumTemplate extends BaseTemplate {
 		<!--<div id="p-logo" role="banner"><a href="<?php echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] ) ?>">atlasmuseum</a></div>-->
 		<div id="p-logo" role="banner">
 			<?php
-				$logo = ResourceLoaderSkinModule::getAvailableLogos( $this->getSkin()->getConfig() );
+				$logo = SkinModule::getAvailableLogos( $this->getSkin()->getConfig() );
 				$wordmark = $logo['wordmark'] ?? false;
 			?>
 			<a href="<?php echo Title::newMainPage()->getLocalUrl()?>">
@@ -277,12 +279,11 @@ class AtlasMuseumTemplate extends BaseTemplate {
 
 			// Numeric strings gets an integer when set as key, cast back - T73639
 			$name = (string)$name;
-
 			switch ( $name ) {
 				case 'SEARCH':
 					break;
 				case 'TOOLBOX':
-					$this->renderPortal( 'tb', $this->data['sidebar']['TOOLBOX'], 'toolbox', 'SkinTemplateToolboxEnd' );
+					$this->renderPortal( 'tb', $this->data['sidebar']['TOOLBOX'], 'toolbox' );
 					break;
 				case 'LANGUAGES':
 					if ( $this->data['language_urls'] !== false ) {
@@ -300,9 +301,8 @@ class AtlasMuseumTemplate extends BaseTemplate {
 	 * @param string $name
 	 * @param array $content
 	 * @param null|string $msg
-	 * @param null|string|array $hook
 	 */
-	protected function renderPortal( $name, $content, $msg = null, $hook = null ) {
+	protected function renderPortal( $name, $content, $msg = null ) {
 		if ( $msg === null ) {
 			$msg = $name;
 		}
@@ -326,9 +326,6 @@ class AtlasMuseumTemplate extends BaseTemplate {
 						<?php
 						foreach ( $content as $key => $val ) {
 							echo $this->makeListItem( $key, $val );
-						}
-						if ( $hook !== null ) {
-							Hooks::run( $hook, array( &$this, true ) );
 						}
 						?>
 					</ul>
