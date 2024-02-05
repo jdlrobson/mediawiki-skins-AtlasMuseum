@@ -36,7 +36,7 @@
 	},
 	"ResourceModules": {
 		"skins.atlasmuseum": {
-			"class": "ResourceLoaderSkinModule",
+			"class": "MediaWiki\\ResourceLoader\\SkinModule",
 			"features": {
 				"interface": true
 			},
