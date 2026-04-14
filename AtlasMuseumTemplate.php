@@ -1,5 +1,8 @@
 <?php
+use MediaWiki\Linker\Linker;
+use MediaWiki\Html\Html;
 use MediaWiki\ResourceLoader\SkinModule;
+use MediaWiki\Title\Title;
 
 /**
  * BaseTemplate class for atlasmuseum skin
@@ -97,7 +100,7 @@ class AtlasMuseumTemplate extends BaseTemplate {
 		}
 
 		$this->data['pageLanguage'] =
-			$this->getSkin()->getTitle()->getPageViewLanguage()->getHtmlCode();
+			$this->getSkin()->getTitle()->getPageLanguage()->getHtmlCode();
 ?>
 <div id="page-base" class="noprint"></div>
 <div id="content">
