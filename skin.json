@@ -7,14 +7,23 @@
 	"type": "skin",
 	"manifest_version": 2,
 	"requires": {
-		"MediaWiki": ">= 1.41.0"
+		"MediaWiki": ">= 1.46.0"
 	},
 	"ValidSkinNames": {
 		"atlasmuseum": {
 			"class": "SkinAtlasMuseum",
 			"args": [
 				{
-					"bodyOnly": true,
+					"menus": [
+						"user-menu",
+						"notifications",
+						"user-interface-preferences",
+						"user-page",
+						"associated-pages",
+						"views",
+						"actions",
+						"variants"
+					],
 					"name": "atlasmuseum",
 					"styles": [
 						"skins.atlasmuseum"

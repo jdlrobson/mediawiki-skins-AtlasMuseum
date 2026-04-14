@@ -11,6 +11,24 @@ use MediaWiki\Title\Title;
  */
 class AtlasMuseumTemplate extends BaseTemplate {
 	/**
+	 * Backwards compatibility method to get personal tools the "classic way" that doesn't trigger
+	 * deprecation warnings (T422975).
+	 *
+	 * @return array
+	 */
+	private function getPersonalToolsClassic() {
+		$cNav = $this->get( 'content_navigation' );
+		$personalTools = array_merge(
+			$cNav['user-interface-preferences'],
+			$cNav['user-page'],
+			$cNav['notifications'],
+			$cNav['user-menu']
+		);
+
+		return $this->getSkin()->getPersonalToolsForMakeListItem( $personalTools );
+	}
+
+	/**
 	 * Outputs the entire contents of the page
 	 */
 	public function execute() {
@@ -44,7 +62,7 @@ class AtlasMuseumTemplate extends BaseTemplate {
 				$xmlID = isset( $link['id'] ) ? $link['id'] : 'ca-' . $xmlID;
 				$nav[$section][$key]['attributes'] =
 					' id="' . Sanitizer::escapeIdForAttribute( $xmlID ) . '"';
-				if ( $link['class'] ) {
+				if ( isset( $link['class'] ) ) {
 					$nav[$section][$key]['attributes'] .=
 						' class="' . htmlspecialchars( $link['class'] ) . '"';
 					unset( $nav[$section][$key]['class'] );
@@ -58,7 +76,7 @@ class AtlasMuseumTemplate extends BaseTemplate {
 				}
 			}
 		}
-		$this->data['namespace_urls'] = $nav['namespaces'];
+		$this->data['namespace_urls'] = $nav['associated-pages'];
 		$this->data['view_urls'] = $nav['views'];
 
 		if ($this->data["skin"]->loggedin && $this->data["skin"]->thispage == "Œuvre") {
@@ -89,6 +107,8 @@ class AtlasMuseumTemplate extends BaseTemplate {
 		$this->data['action_urls'] = $nav['actions'];
 		$this->data['variant_urls'] = $nav['variants'];
 
+		$this->data['personal_urls'] =
+			array_reverse( $this->getPersonalToolsClassic() );
 		// Reverse horizontally rendered navigation elements
 		if ( $this->data['rtl'] ) {
 			$this->data['view_urls'] =
@@ -504,14 +524,14 @@ class AtlasMuseumTemplate extends BaseTemplate {
 				case 'PERSONAL':
 					?>
 					<div id="p-personal" role="navigation" class="<?php
-					if ( count( $this->data['personal_urls'] ) == 0 ) {
+					$personalTools = $this->data['personal_urls'];
+					if ( count( $personalTools ) == 0 ) {
 						echo ' emptyPortlet';
 					}
 					?>" aria-labelledby="p-personal-label">
 						<h3 id="p-personal-label"><?php $this->msg( 'personaltools' ) ?></h3>
 						<ul<?php $this->html( 'userlangattributes' ) ?>>
 							<?php
-							$personalTools = $this->getPersonalTools();
 							foreach ( $personalTools as $key => $item ) {
 								echo $this->makeListItem( $key, $item );
 							}
