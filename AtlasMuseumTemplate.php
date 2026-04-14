@@ -107,8 +107,7 @@ class AtlasMuseumTemplate extends BaseTemplate {
 		$this->data['action_urls'] = $nav['actions'];
 		$this->data['variant_urls'] = $nav['variants'];
 
-		$this->data['personal_urls'] =
-			array_reverse( $this->getPersonalToolsClassic() );
+		$this->data['personal_urls'] = $this->getPersonalToolsClassic();
 		// Reverse horizontally rendered navigation elements
 		if ( $this->data['rtl'] ) {
 			$this->data['view_urls'] =
